@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="LibrasApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibrasApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="54" Margin="229,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="21.333" TextAlignment="Center">
+        	<Span>
+        		<Run Text="Libras – datilologia"/>
+        	</Span>
+        	<Span FontFamily="Calibri">
+        		<LineBreak/>
+        	</Span>
+        	<Span>
+        		<Run Text="Eu falo com as mãos"/>
+        	</Span>
+        </TextBlock>
+        <Button x:Name="button" Content="Instruções" HorizontalAlignment="Left" Margin="175,238,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Jogar" HorizontalAlignment="Left" Margin="381,238,0,0" VerticalAlignment="Top" Width="110"/>
+
+    </Grid>
+</Page>
