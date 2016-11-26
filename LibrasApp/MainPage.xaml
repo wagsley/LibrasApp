@@ -19,8 +19,8 @@
         		<Run Text="Eu falo com as mãos"/>
         	</Span>
         </TextBlock>
-        <Button x:Name="button" Content="Instruções" HorizontalAlignment="Left" Margin="175,238,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="Jogar" HorizontalAlignment="Left" Margin="381,238,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="btnInstrucoes" Content="Instruções" HorizontalAlignment="Left" Margin="175,238,0,0" VerticalAlignment="Top" Click="btnInstrucoes_Click"/>
+        <Button x:Name="btnJogar" Content="Jogar" HorizontalAlignment="Left" Margin="381,238,0,0" VerticalAlignment="Top" Width="110" Click="btnJogar_Click"/>
 
     </Grid>
 </Page>
