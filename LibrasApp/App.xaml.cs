@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 namespace LibrasApp
 {
     /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
+    /// Provides application-specific behavior to supplement the default Application class. Teste Lucas
     /// </summary>
     sealed partial class App : Application
     {
