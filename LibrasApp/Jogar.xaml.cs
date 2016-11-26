@@ -26,5 +26,10 @@ namespace LibrasApp
         {
             this.InitializeComponent();
         }
+
+        private void btnVerificar_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

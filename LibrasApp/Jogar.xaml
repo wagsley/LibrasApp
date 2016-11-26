@@ -9,8 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="96" Margin="68,97,0,0" VerticalAlignment="Top" Width="138"/>
+
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,61,0,0" TextWrapping="Wrap" Text="Jogar" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="105,138,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="89" Width="101"/>
+
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="86,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="73" Width="87" FontWeight="Bold"/>
+        <Button x:Name="btnVerificar" Content="Verificar" HorizontalAlignment="Left" Margin="266,228,0,0" VerticalAlignment="Top" Width="98" Click="btnVerificar_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="8" Margin="86,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="29" Margin="292,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="119"/>
 
     </Grid>
 </Page>
