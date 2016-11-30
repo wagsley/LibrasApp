@@ -98,8 +98,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlankPage1.xaml.cs">
-      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    <Compile Include="TelaJogo.xaml.cs">
+      <DependentUpon>TelaJogo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Instrucoes.xaml.cs">
       <DependentUpon>Instrucoes.xaml</DependentUpon>
@@ -135,7 +135,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BlankPage1.xaml">
+    <Page Include="TelaJogo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,10 +5,7 @@
     xmlns:local="using:LibrasApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/usareste.png"/>
-    </Page.Background>
+    mc:Ignorable="d" Foreground="#FF3885D3" Background="#FF43A6EC">
 
     <Grid RenderTransformOrigin="0.504,0.488" Margin="0,0,10,10">
         <Grid.Background>
@@ -28,18 +25,36 @@
 
         </Grid.ColumnDefinitions>
 
+        <Image x:Name="image1" Grid.RowSpan="2" Grid.ColumnSpan="2" d:LayoutOverrides="LeftPosition, RightPosition" Source="Assets/usareste.png" Margin="-10,10,10,-10" HorizontalAlignment="Left"/>
+
         <Grid Grid.ColumnSpan="2" Margin="0,58,0,0" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
+            <Grid Grid.Column="1">
+                <!--asdasdasdasd-->
+                <Grid.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Grid.Background>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Horizontal" Margin="20,1">
+
+
+                        <!--<Rectangle Fill="Red" Width="100" Height="10" Margin="20" />  -->
+
+
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
             <Grid Grid.Column="0" Grid.Row="200">
                 <Grid.Background>
                     <ImageBrush Stretch="Fill"/>
                 </Grid.Background>
                 <StackPanel Orientation="Vertical" Margin="20">
-                    <Image x:Name="image" Margin="20" Height="150" RenderTransformOrigin="0.5,0.5"/>
+                    <Image x:Name="image" Margin="20" Height="150" RenderTransformOrigin="1,0.5"/>
                     <StackPanel Orientation="Horizontal" Margin="20,1">
 
 
@@ -47,20 +62,16 @@
 
 
                         <!--<Rectangle Fill="Red" Width="100" Height="10" Margin="20" />  -->
-                        <Button x:Name="Verificar" Content="Verificar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,20,5,20" Background="#335C7ADE" FontFamily="Rockwell Condensed"/>
+                        <Button x:Name="Verificar" Content="Verificar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,20,5,20" Background="#33FFFFFF" FontFamily="Rockwell Condensed"/>
 
 
                     </StackPanel>
                 </StackPanel>
                 <!--asdasdasdasd-->
             </Grid>
-            <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="73,260,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
+            <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
         </Grid>
-        <TextBlock x:Name="DatilologiaGame" HorizontalAlignment="Center" Margin="117,-13,148,-14.667" TextWrapping="Wrap" VerticalAlignment="Center" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Width="341">
-            <Run Text="DatilologiaGame"/>
-            <Run Text=" "/>
-            <Run Text="tela"/>
-        </TextBlock>
+        <TextBlock x:Name="DatilologiaGame" HorizontalAlignment="Center" Margin="117,-13,148,-14.667" TextWrapping="Wrap" VerticalAlignment="Center" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Width="341" Text="DatilologiaGame"/>
 
     </Grid>
 </Page>
