@@ -120,6 +120,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\datilologia.jpg" />
+    <Content Include="Assets\LetrasDat\a.png" />
+    <Content Include="Assets\LetrasDat\b.png" />
+    <Content Include="Assets\LetrasDat\c.png" />
+    <Content Include="Assets\LetrasDat\d.png" />
+    <Content Include="Assets\LetrasDat\e.png" />
+    <Content Include="Assets\LetrasDat\f.png" />
+    <Content Include="Assets\LetrasDat\g.png" />
+    <Content Include="Assets\LetrasDat\h.png" />
+    <Content Include="Assets\LetrasDat\i.png" />
+    <Content Include="Assets\LetrasDat\j.png" />
     <Content Include="Assets\usareste.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

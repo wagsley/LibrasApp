@@ -67,6 +67,7 @@
 
                     </StackPanel>
                 </StackPanel>
+                <Image x:Name="Assets_LetrasDat_a_png" Margin="95,46,80,106" Source="Assets/LetrasDat/a.png" Stretch="Fill" d:LayoutOverrides="TopPosition, BottomPosition" Width="140"/>
                 <!--asdasdasdasd-->
             </Grid>
             <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
