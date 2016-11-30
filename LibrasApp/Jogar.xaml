@@ -13,10 +13,12 @@
 
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,61,0,0" TextWrapping="Wrap" Text="Jogar" VerticalAlignment="Top"/>
 
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="86,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="73" Width="87" FontWeight="Bold"/>
-        <Button x:Name="btnVerificar" Content="Verificar" HorizontalAlignment="Left" Margin="266,228,0,0" VerticalAlignment="Top" Width="98" Click="btnVerificar_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="8" Margin="86,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="29" Margin="292,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="119"/>
+        <TextBlock x:Name="txtbLetras" HorizontalAlignment="Left" Margin="86,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="73" Width="87" FontWeight="Bold"/>
+        <Button x:Name="btnVerificar" Content="Verificar" HorizontalAlignment="Left" Margin="170,281,0,0" VerticalAlignment="Top" Width="98" Click="btnVerificar_Click"/>
+        <TextBox x:Name="txtPalavraDigitada" HorizontalAlignment="Left" Height="8" Margin="86,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+        <TextBlock x:Name="txtbPalavraCorrigida" HorizontalAlignment="Left" Height="29" Margin="292,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="86,281,0,0" VerticalAlignment="Top" Click="btnIniciar_Click"/>
+        <Image x:Name="imgLetra" HorizontalAlignment="Left" Height="100" Margin="292,260,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>

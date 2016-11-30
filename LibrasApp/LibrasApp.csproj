@@ -92,6 +92,32 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="UserControl\B.jpg" />
+    <Content Include="UserControl\D.jpg" />
+    <Content Include="UserControl\E.jpg" />
+    <Content Include="UserControl\F.jpg" />
+    <Content Include="UserControl\G.jpg" />
+    <Content Include="UserControl\H.jpg" />
+    <Content Include="UserControl\I.jpg" />
+    <Content Include="UserControl\J.jpg" />
+    <Content Include="UserControl\K.jpg" />
+    <Content Include="UserControl\M.jpg" />
+    <Content Include="UserControl\N.jpg" />
+    <Content Include="UserControl\O.jpg" />
+    <Content Include="UserControl\L.jpg" />
+    <Content Include="UserControl\A.jpg" />
+    <Content Include="UserControl\C.jpg" />
+    <Content Include="UserControl\P.jpg" />
+    <Content Include="UserControl\Q.jpg" />
+    <Content Include="UserControl\R.jpg" />
+    <Content Include="UserControl\S.jpg" />
+    <Content Include="UserControl\T.jpg" />
+    <Content Include="UserControl\U.jpg" />
+    <Content Include="UserControl\V.jpg" />
+    <Content Include="UserControl\W.jpg" />
+    <Content Include="UserControl\X.jpg" />
+    <Content Include="UserControl\Y.jpg" />
+    <Content Include="UserControl\Z.jpg" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -143,9 +169,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserControl\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
