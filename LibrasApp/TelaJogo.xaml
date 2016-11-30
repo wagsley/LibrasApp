@@ -79,6 +79,7 @@
                 </StackPanel>
                 <!--asdasdasdasd-->
             </Grid>
+            <Image x:Name="Assets_Alfabeto_Libras_A_png" Margin="97,46,78,106" Source="Assets/Alfabeto Libras/A.png" Stretch="Fill" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition" Height="140"/>
             <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
         </Grid>
         <TextBlock x:Name="DatilologiaGame" Margin="117,8,148,0" TextWrapping="Wrap" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Text="DatilologiaGame" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
