@@ -16,8 +16,9 @@
             </ImageBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.20*"/>
-            <RowDefinition />
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="146*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="4*" />
@@ -25,9 +26,9 @@
 
         </Grid.ColumnDefinitions>
 
-        <Image x:Name="image1" Grid.RowSpan="2" Grid.ColumnSpan="2" d:LayoutOverrides="LeftPosition, RightPosition" Source="Assets/usareste.png" Margin="-10,10,10,-10" HorizontalAlignment="Left"/>
+        <Image x:Name="image1" Grid.RowSpan="3" Grid.ColumnSpan="2" Source="Assets/usareste.png" Margin="-10,10,145,-10" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
 
-        <Grid Grid.ColumnSpan="2" Margin="0,58,0,0" Grid.RowSpan="2">
+        <Grid Grid.ColumnSpan="2" Grid.Row="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin, TopPosition, BottomPosition">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -47,6 +48,15 @@
 
                     </StackPanel>
                 </StackPanel>
+                <Rectangle Height="89" Margin="10,20,20,0" Stroke="Black" VerticalAlignment="Top" d:IsHidden="True">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF33C3DA"/>
+                            <GradientStop Color="#FF214AA2" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Image x:Name="Assets_Alfabeto_Verde_f___Verde_png" HorizontalAlignment="Right" Height="40" Margin="0,48,56,204" Source="Assets/Alfabeto Verde/f - Verde.png" Stretch="Fill" Width="40" RenderTransformOrigin="2.542,1.192"/>
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="200">
@@ -67,12 +77,19 @@
 
                     </StackPanel>
                 </StackPanel>
-                <Image x:Name="Assets_LetrasDat_a_png" Margin="95,46,80,106" Source="Assets/LetrasDat/a.png" Stretch="Fill" d:LayoutOverrides="TopPosition, BottomPosition" Width="140"/>
                 <!--asdasdasdasd-->
             </Grid>
             <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
         </Grid>
-        <TextBlock x:Name="DatilologiaGame" HorizontalAlignment="Center" Margin="117,-13,148,-14.667" TextWrapping="Wrap" VerticalAlignment="Center" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Width="341" Text="DatilologiaGame"/>
+        <TextBlock x:Name="DatilologiaGame" Margin="117,8,148,0" TextWrapping="Wrap" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Text="DatilologiaGame" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_a___V_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,256,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/a - V.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Verde_b___Verde_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,216,0" Grid.Row="2" Source="Assets/Alfabeto Verde/b - Verde.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_c___V_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,176,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/c - V.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Verde_d___Verde_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,136,0" Grid.Row="2" Source="Assets/Alfabeto Verde/d - Verde.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_e___V_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,48,96,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/e - V.png" Stretch="Fill" Width="40" Height="40" VerticalAlignment="Top" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_cortinaazul_png" Grid.ColumnSpan="2" Margin="-10,0,0,-402" Source="Assets/cortinaazul.png" Stretch="Fill" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" Opacity="0.4" Grid.Row="2" Height="338" VerticalAlignment="Bottom"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_g___V_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,48,16,204" Source="Assets/Alfabeto Vermelho/g - V.png" Stretch="Fill" Width="40" Height="40" Grid.Row="2"/>
+        <Image x:Name="Assets_cortinaazul2_png" Margin="0,0,-10,-10" Grid.RowSpan="3" Source="Assets/cortinaazul2.png" Stretch="Fill" Grid.ColumnSpan="2" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition" Opacity="0.3"/>
 
     </Grid>
 </Page>
