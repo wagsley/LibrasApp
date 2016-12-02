@@ -12,8 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using System.Threading;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.Media.PlayTo;
+using Windows.UI.Core;
 
 
 
@@ -26,70 +27,110 @@ namespace LibrasApp
     /// </summary>
     public sealed partial class Jogar : Page
     {
-        string palavra = string.Empty;
         public Jogar()
         {
             this.InitializeComponent();
+            listaDePalavras();
+        }
+
+        //add dispatchr timer
+
+        DispatcherTimer playlistTimer = null;
+        PlayToManager playToManager = null;
+        CoreDispatcher dispatcher = null;
+        List<string> Images = new List<string>();
+        string palavra = string.Empty;
+        List<string> listaPalavras = new List<string>();
+        Random radomListaPalavra = new Random();
+
+        /// <summary>
+        /// Lista de palavras
+        /// </summary>
+        public void listaDePalavras()
+        {
+            listaPalavras.Add("CARRO");
+            listaPalavras.Add("BOLA");
+            listaPalavras.Add("MOTO");
+            listaPalavras.Add("CAVALO");
+            listaPalavras.Add("UVA");
         }
 
         /// <summary>
         /// Palavra selecionada para o jogo
         /// </summary>
-        public void  selecionarPalavra()
+        public void selecionarPalavra()
         {
-            var listaPalavra = new string[] { "BOLA", "CARRO", "MOTO","CAVALO" };
-            var radomListaPalavra = new Random();
-            int index = radomListaPalavra.Next(listaPalavra.Length);
-
-             palavra = listaPalavra[index];
-        }
-
-        /// <summary>
-        /// Nivel de dificuldade do jogo em palavras por segundo
-        /// </summary>
-        public void nivelPorSegundo(int i)
-        {
-            imgLetra.Source = new BitmapImage(new Uri("ms-appx:///UserControl/" + Images[i].ToString()));
-            playlistTimer.Stop();
-            
-
-
-        }
-        private void btnVerificar_Click(object sender, RoutedEventArgs e)
-        {
-            
-
-            for (int i = 0; i < palavra.Length; i++)
-            {
-                if (txtPalavraDigitada.Text[i].Equals(palavra[i]))
-                {
-                    txtbPalavraCorrigida.Text += palavra[i];
-                }
-                else txtbPalavraCorrigida.Text += "X";
-            }
-        }
-        DispatcherTimer playlistTimer = null;
-        List<string> Images = new List<string>();
-        private void btnIniciar_Click(object sender, RoutedEventArgs e)
-        {
-            selecionarPalavra();
-
-            txtPalavraDigitada.MaxLength = palavra.Length;
            
+            int index = radomListaPalavra.Next(listaPalavras.Count);
+
+            palavra = listaPalavras[index];
+
+            //adicionar as imagnes na lista
             for (int i = 0; i < palavra.Length; i++)
                 Images.Add(palavra[i].ToString() + ".jpg");
-       
+
+        }
+        //add cod to on navigated to function
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //add imags thatyou want to show in your slide show
+            selecionarPalavra();        
             playlistTimer = new DispatcherTimer();
-            playlistTimer.Interval = new TimeSpan(0, 0, 5);
-            
-            for (int i = 0; i < palavra.Length; i++)
+
+            //Set the Time span jis me Images chnge hngay like yha 3 Sec bd Image chng hga
+            playlistTimer.Interval = new TimeSpan(0, 0, 3);
+
+            playlistTimer.Tick += playlistTimer_Tick;
+
+            playToManager = PlayToManager.GetForCurrentView();
+            playToManager.SourceRequested += playToManager_SourceRequested;
+            //right click to bitmapimage and reslove
+            ImageSource.Source = new BitmapImage(new Uri("ms-appx:///UserControl/" + Images[count]));
+
+
+        }
+
+        private void playToManager_SourceRequested(PlayToManager sender, PlayToSourceRequestedEventArgs args)
+        {
+            var deferral = args.SourceRequest.GetDeferral();
+            var handler = dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
-                nivelPorSegundo(i);
-                playlistTimer.Start();
+                args.SourceRequest.SetSource(ImageSource.PlayToSource);
+                deferral.Complete();
+            });
+        }
+        int count = 0;
+
+        //function of timer tick
+        private void playlistTimer_Tick(object sender, object e)
+        {
+
+            if (Images != null)
+            {
+                if (count == Images.Count - 1)
+                    count = 0;
+                if (count < Images.Count)
+                {
+                    count++;
+                    ImageRotation();
+                }
             }
         }
 
-   
-        
+
+        private void ImageRotation()
+        {
+            ImageSource.Source = new BitmapImage(new Uri("ms-appx:///UserControl/" + Images[count]));
+        }
+
+        private void btnIniciar_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                if (Images != null)
+                {
+                    playlistTimer.Start();
+                }
+            }
+        }
     }
 }

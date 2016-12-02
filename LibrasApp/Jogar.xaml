@@ -7,18 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FF3399FF">
+        <Border BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="135" Margin="40,108,0,0" VerticalAlignment="Top" Width="214">
+            <Image x:Name="ImageSource" Source="uri" AutomationProperties.Name="ImageSource" VerticalAlignment="Top" Stretch="Fill" Height="100" Width="100" Margin="39,13,65,0">
+            </Image>
+        </Border>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="94,285,0,0" VerticalAlignment="Top" Background="White" BorderBrush="#FF3399FF" FontWeight="Bold" Click="btnIniciar_Click"/>
 
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="96" Margin="68,97,0,0" VerticalAlignment="Top" Width="138"/>
 
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,61,0,0" TextWrapping="Wrap" Text="Jogar" VerticalAlignment="Top"/>
-
-        <TextBlock x:Name="txtbLetras" HorizontalAlignment="Left" Margin="86,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="73" Width="87" FontWeight="Bold"/>
-        <Button x:Name="btnVerificar" Content="Verificar" HorizontalAlignment="Left" Margin="170,281,0,0" VerticalAlignment="Top" Width="98" Click="btnVerificar_Click"/>
-        <TextBox x:Name="txtPalavraDigitada" HorizontalAlignment="Left" Height="8" Margin="86,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
-        <TextBlock x:Name="txtbPalavraCorrigida" HorizontalAlignment="Left" Height="29" Margin="292,110,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="119"/>
-        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="86,281,0,0" VerticalAlignment="Top" Click="btnIniciar_Click"/>
-        <Image x:Name="imgLetra" HorizontalAlignment="Left" Height="100" Margin="292,260,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>
