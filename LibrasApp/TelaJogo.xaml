@@ -1,0 +1,141 @@
+﻿<Page
+    x:Class="LibrasApp.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibrasApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="#FF3885D3" Background="#FF43A6EC">
+
+    <Grid RenderTransformOrigin="0.504,0.488" Margin="0,0,10,10">
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Assets/ImagensApp/usareste.png">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5"/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="146*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="101*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="image1" Grid.RowSpan="3" Grid.ColumnSpan="2" Source="Assets/usareste.png" Margin="-10,10,145,-10" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+
+        <Grid Grid.ColumnSpan="2" Grid.Row="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin, TopPosition, BottomPosition">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <!--asdasdasdasd-->
+                <Grid.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Grid.Background>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Horizontal" Margin="20,1">
+
+
+                        <!--<Rectangle Fill="Red" Width="100" Height="10" Margin="20" />  -->
+
+
+                    </StackPanel>
+                </StackPanel>
+                <Rectangle Height="89" Margin="10,20,20,0" Stroke="Black" VerticalAlignment="Top" d:IsHidden="True">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF33C3DA"/>
+                            <GradientStop Color="#FF214AA2" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Image x:Name="Assets_Alfabeto_Verde_f___Verde_png" HorizontalAlignment="Right" Height="40" Margin="0,48,56,204" Source="Assets/Alfabeto Verde/f - Verde.png" Stretch="Fill" Width="40" RenderTransformOrigin="2.542,1.192"/>
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="200">
+                <Grid.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Grid.Background>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <Image x:Name="image" Margin="20" Height="150" RenderTransformOrigin="1,0.5"/>
+                    <StackPanel Orientation="Horizontal" Margin="20,1">
+
+
+                        <TextBox x:Name="Letra" TextWrapping="Wrap" Text="Digite Aqui" Width="130" Height="20" Margin="0,20,20,20" FontFamily="Rockwell Condensed"/>
+
+
+                        <!--<Rectangle Fill="Red" Width="100" Height="10" Margin="20" />  -->
+                        <Button x:Name="Verificar" Content="Verificar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,20,5,20" Background="#33FFFFFF" FontFamily="Rockwell Condensed"/>
+
+
+                    </StackPanel>
+                </StackPanel>
+                <!--asdasdasdasd-->
+            </Grid>
+            <Image x:Name="Assets_Alfabeto_Libras_A_png" Margin="97,46,78,106" Source="Assets/Alfabeto Libras/A.png" Stretch="Fill" d:LayoutOverrides="VerticalAlignment, LeftPosition, RightPosition" Height="140"/>
+            <TimePicker Grid.Column="1" HorizontalAlignment="Left" Margin="63,233,0,0" VerticalAlignment="Top" FontFamily="Rockwell Condensed" FontStyle="Normal"/>
+        </Grid>
+        <TextBlock x:Name="DatilologiaGame" Margin="117,8,148,0" TextWrapping="Wrap" SelectionChanged="textBlock_SelectionChanged" FontFamily="Rockwell Condensed" FontSize="36" Grid.Column="1" Text="DatilologiaGame" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_a___V_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,256,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/a - V.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Verde_b___Verde_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,216,0" Grid.Row="2" Source="Assets/Alfabeto Verde/b - Verde.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_c___V_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,176,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/c - V.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Verde_d___Verde_png" Grid.Column="1" HorizontalAlignment="Right" Height="40" Margin="0,48,136,0" Grid.Row="2" Source="Assets/Alfabeto Verde/d - Verde.png" Stretch="Fill" VerticalAlignment="Top" Width="40" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_e___V_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,48,96,0" Grid.Row="2" Source="Assets/Alfabeto Vermelho/e - V.png" Stretch="Fill" Width="40" Height="40" VerticalAlignment="Top" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Image x:Name="Assets_cortinaazul_png" Grid.ColumnSpan="2" Margin="-10,0,0,-402" Source="Assets/cortinaazul.png" Stretch="Fill" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" Opacity="0.4" Grid.Row="2" Height="338" VerticalAlignment="Bottom"/>
+        <Image x:Name="Assets_Alfabeto_Vermelho_g___V_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,48,16,204" Source="Assets/Alfabeto Vermelho/g - V.png" Stretch="Fill" Width="40" Height="40" Grid.Row="2"/>
+        <Image x:Name="Assets_cortinaazul2_png" Margin="0,0,-10,-10" Grid.RowSpan="3" Source="Assets/cortinaazul2.png" Stretch="Fill" Grid.ColumnSpan="2" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition" Opacity="0.3"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" Height="66" Margin="0,0,20,47" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="280" FontFamily="Rockwell">
+            <Run Text="A palavra é: "/>
+            <Run Text="EBADIFO"/>
+            <LineBreak/>
+            <Run Text="Você "/>
+            <Run Text="acertou "/>
+            <Run Text="3"/>
+            <Run Text=" letras de 6"/>
+            <Run Text="."/>
+            <LineBreak/>
+            <Run Text="Mais 3 e você "/>
+            <Run Text="terá uma pontuação "/>
+            <Run Text="ninja!"/>
+        </TextBlock>
+        <Image x:Name="Assets_Icones_NinjaTriste_png" Margin="0,20,-21,71" Source="Assets/Icones/NinjaTriste.png" Stretch="Fill" Width="200" Height="201" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" d:LayoutOverrides="VerticalAlignment, Width" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_ninjateste2cabeçamenorajustado_png" Margin="433,38,-27,54" Source="Assets/Icones/ninjateste2cabeçamenorajustado.png" Stretch="Fill" Width="200" Height="200" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.655,0.605" d:IsHidden="True">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Assets_Icones_Like___1_png1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,121,46,111" Grid.Row="2" Source="Assets/Icones/Like - 1.png" Stretch="Fill" Width="60" Height="60" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_Ninja_Triste_png" Margin="496,103,21,100" Source="Assets/Icones/Ninja Triste.png" Stretch="Fill" Width="89" Height="89" Grid.Column="1" Grid.Row="2" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_Ninja_Feliz_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,102,21,101" Grid.Row="2" Source="Assets/Icones/Ninja Feliz.png" Stretch="Fill" Width="89" RenderTransformOrigin="1.517,0.506" Height="89" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_Like___1_png" Margin="571,128,-617,94" Source="Assets/Icones/Like - 1.png" Stretch="Fill" Width="60" Height="60" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Assets_Icones_Like___1_png_Copy" Margin="461,128,75,94" Source="Assets/Icones/Like - 1.png" Stretch="Fill" Width="60" Height="60" Grid.Row="2" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment" Grid.Column="1" d:IsHidden="True">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Assets_Icones_Like___1_png_Copy1" Margin="552,133,-6,99" Source="Assets/Icones/Like - 1.png" Stretch="Fill" Width="60" Height="60" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.Column="1" d:LayoutOverrides="VerticalAlignment" d:IsHidden="True">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="-1" ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Assets_Icones_Like___1_png_Copy2" Margin="466,133,80,99" Source="Assets/Icones/Like - 1.png" Stretch="Fill" Width="60" Height="60" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.Column="1" d:LayoutOverrides="VerticalAlignment" d:IsHidden="True">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Assets_Icones_ninjateste2cabeçamenor2_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,36,-28,56" Source="Assets/Icones/ninjateste2cabeçamenor2.png" Stretch="Fill" Width="200" Height="200" Grid.Row="2" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_ninjateste2cabeçamenor3_png" Grid.Column="1" HorizontalAlignment="Right" Margin="0,41,-34,51" Grid.Row="2" Source="Assets/Icones/ninjateste2cabeçamenor3.png" Stretch="Fill" Width="200" Height="200" d:IsHidden="True"/>
+
+    </Grid>
+</Page>

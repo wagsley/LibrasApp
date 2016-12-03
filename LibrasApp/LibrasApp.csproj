@@ -125,6 +125,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TelaJogo.xaml.cs">
+      <DependentUpon>TelaJogo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Instrucoes.xaml.cs">
       <DependentUpon>Instrucoes.xaml</DependentUpon>
     </Compile>
@@ -143,6 +146,129 @@
     <None Include="LibrasApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Alfabeto AZ Certo\a.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\b.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\c.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\d.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\e.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\f.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\g.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\h.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\i.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\j.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\k.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\l.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\m.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\n.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\o.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\p.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\q.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\r.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\s.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\t.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\u.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\v.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\x.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\y.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\z.png" />
+    <Content Include="Assets\Alfabeto AZ Certo\ç.png" />
+    <Content Include="Assets\Alfabeto Libras\A.png" />
+    <Content Include="Assets\Alfabeto Libras\B.png" />
+    <Content Include="Assets\Alfabeto Libras\C.png" />
+    <Content Include="Assets\Alfabeto Libras\D.png" />
+    <Content Include="Assets\Alfabeto Libras\E.png" />
+    <Content Include="Assets\Alfabeto Libras\F.png" />
+    <Content Include="Assets\Alfabeto Libras\G.png" />
+    <Content Include="Assets\Alfabeto Libras\H.png" />
+    <Content Include="Assets\Alfabeto Libras\I.png" />
+    <Content Include="Assets\Alfabeto Libras\J.png" />
+    <Content Include="Assets\Alfabeto Libras\K.png" />
+    <Content Include="Assets\Alfabeto Libras\L.png" />
+    <Content Include="Assets\Alfabeto Libras\M.png" />
+    <Content Include="Assets\Alfabeto Libras\N.png" />
+    <Content Include="Assets\Alfabeto Libras\O.png" />
+    <Content Include="Assets\Alfabeto Libras\P.png" />
+    <Content Include="Assets\Alfabeto Libras\Q.png" />
+    <Content Include="Assets\Alfabeto Libras\R.png" />
+    <Content Include="Assets\Alfabeto Libras\S.png" />
+    <Content Include="Assets\Alfabeto Libras\T.png" />
+    <Content Include="Assets\Alfabeto Libras\U.png" />
+    <Content Include="Assets\Alfabeto Libras\V.png" />
+    <Content Include="Assets\Alfabeto Libras\X.png" />
+    <Content Include="Assets\Alfabeto Libras\Y.png" />
+    <Content Include="Assets\Alfabeto Libras\Z.png" />
+    <Content Include="Assets\Alfabeto Libras\Ç.png" />
+    <Content Include="Assets\Alfabeto Verde\a - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\b - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\c - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\d - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\e - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\f - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\g - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\h - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\i - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\j - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\k - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\l - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\m - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\n - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\o - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\p - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\q - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\r - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\s - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\t - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\u - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\v - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\x - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\y - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\z - Verde.png" />
+    <Content Include="Assets\Alfabeto Verde\ç - Verde.png" />
+    <Content Include="Assets\Alfabeto Vermelho\a - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\b - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\c - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\d - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\e - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\f - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\g - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\h - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\i - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\j - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\k - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\l - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\m - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\n - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\o - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\p - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\q - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\r - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\s - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\t - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\u - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\v - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\x - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\y - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\z - V.png" />
+    <Content Include="Assets\Alfabeto Vermelho\ç - V.png" />
+    <Content Include="Assets\cortinaazul.png" />
+    <Content Include="Assets\cortinaazul2.png" />
+    <Content Include="Assets\datilologia.jpg" />
+    <Content Include="Assets\Icones\Avançar 1.png" />
+    <Content Include="Assets\Icones\Avançar 2.png" />
+    <Content Include="Assets\Icones\Avançar 3.png" />
+    <Content Include="Assets\Icones\DisLike - 1.png" />
+    <Content Include="Assets\Icones\DisLike - 2.png" />
+    <Content Include="Assets\Icones\Like - 1.png" />
+    <Content Include="Assets\Icones\Like - 2.png" />
+    <Content Include="Assets\Icones\Ninja Feliz.png" />
+    <Content Include="Assets\Icones\ninjateste2cabeçamenor2.png" />
+    <Content Include="Assets\Icones\ninjateste2cabeçamenor3.png" />
+    <Content Include="Assets\Icones\ninjateste2cabeçamenorajustado.png" />
+    <Content Include="Assets\Icones\NinjaTriste.png" />
+    <Content Include="Assets\Icones\Voltar 1.png" />
+    <Content Include="Assets\Icones\Voltar 2.png" />
+    <Content Include="Assets\Icones\Voltar 3.png" />
+    <Content Include="Assets\usareste.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -157,6 +283,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="TelaJogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Instrucoes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
