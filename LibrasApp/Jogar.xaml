@@ -20,7 +20,7 @@
         <TextBlock x:Name="txtBlcResultado" HorizontalAlignment="Left" Margin="298,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
         <TextBlock x:Name="txtBlcResultadoFinal" HorizontalAlignment="Left" Margin="298,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
         <TextBlock x:Name="txtBlcParavaCorreta" HorizontalAlignment="Left" Margin="298,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
-        <TextBlock x:Name="txtBlcPalavraEmLibas" HorizontalAlignment="Left" Margin="298,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="25.333" RenderTransformOrigin="0.407,0.227" FontFamily="LIBRAS2002"/>
+        <TextBlock x:Name="txtBlcPalavraEmLibas" HorizontalAlignment="Left" Margin="298,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="32" RenderTransformOrigin="0.407,0.227" FontFamily="LIBRAS2002"/>
 
 
 
