@@ -64,11 +64,12 @@ namespace LibrasApp
             int index = radomListaPalavra.Next(listaPalavras.Count);
 
             palavra = listaPalavras[index];
-
+            Images.Clear();
+            Images.Add("libras.jpg");
             //adicionar as imagnes na lista
             for (int i = 0; i < palavra.Length; i++)
                 Images.Add(palavra[i].ToString() + ".jpg");
-
+            Images.Add("libras.jpg");
         }
         //add cod to on navigated to function
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -104,17 +105,29 @@ namespace LibrasApp
         //function of timer tick
         private void playlistTimer_Tick(object sender, object e)
         {
-
             if (Images != null)
             {
                 if (count == Images.Count - 1)
+                {
                     count = 0;
+                    playlistTimer.Stop();
+                }else
                 if (count < Images.Count)
                 {
                     count++;
                     ImageRotation();
                 }
             }
+            //if (Images != null)
+            //{
+            //    if (count == Images.Count - 1)
+            //        count = 0;
+            //    if (count < Images.Count)
+            //    {
+            //        count++;
+            //        ImageRotation();
+            //    }
+            //}
         }
 
 
@@ -124,13 +137,40 @@ namespace LibrasApp
         }
 
         private void btnIniciar_Click(object sender, RoutedEventArgs e)
-        {
-            {
+        {            
                 if (Images != null)
                 {
-                    playlistTimer.Start();
+                selecionarPalavra();
+                playlistTimer.Start();
+                }
+            txtPalavraDigitada.MaxLength = palavra.Length;           
+        }
+
+        private void btnVerificar_Click(object sender, RoutedEventArgs e)
+        {
+            txtBlcResultado.Text = string.Empty;
+            for (int i = 0; i < palavra.Length; i++)
+            {
+                if (txtPalavraDigitada.Text[i].Equals(( palavra[i])))
+                {
+                    txtBlcResultado.Text += palavra[i];
+                }
+                else {
+                    txtBlcResultado.Text += "X";
+                   // < Run Foreground = "#FF268A35" Text = "ltado" />
                 }
             }
+
+            if (txtBlcResultado.Text.Contains("X"))
+            {
+                txtBlcResultadoFinal.Text = "Para errada, veja a palavara correta";
+                txtBlcParavaCorreta.Text = palavra;
+            }
+            else txtBlcResultadoFinal.Text = "Parabéns você acertou";
+
+
         }
+        
+
     }
 }
