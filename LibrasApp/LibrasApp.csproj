@@ -234,10 +234,10 @@
     <Content Include="Assets\Icones\Like - 1.png" />
     <Content Include="Assets\Icones\Like - 2.png" />
     <Content Include="Assets\Icones\Ninja Feliz.png" />
-    <Content Include="Assets\Icones\Ninja Triste.png" />
     <Content Include="Assets\Icones\ninjateste2cabeçamenor2.png" />
     <Content Include="Assets\Icones\ninjateste2cabeçamenor3.png" />
     <Content Include="Assets\Icones\ninjateste2cabeçamenorajustado.png" />
+    <Content Include="Assets\Icones\NinjaTriste.png" />
     <Content Include="Assets\Icones\Voltar 1.png" />
     <Content Include="Assets\Icones\Voltar 2.png" />
     <Content Include="Assets\Icones\Voltar 3.png" />

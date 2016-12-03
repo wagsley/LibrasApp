@@ -105,7 +105,8 @@
             <Run Text="terá uma pontuação "/>
             <Run Text="ninja!"/>
         </TextBlock>
-        <Image x:Name="Assets_Icones_ninjateste2cabeçamenorajustado_png" Margin="433,38,-27,54" Source="Assets/Icones/ninjateste2cabeçamenorajustado.png" Stretch="Fill" Width="200" Height="200" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.655,0.605">
+        <Image x:Name="Assets_Icones_NinjaTriste_png" Margin="0,20,-21,71" Source="Assets/Icones/NinjaTriste.png" Stretch="Fill" Width="200" Height="201" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="2" d:LayoutOverrides="VerticalAlignment, Width" d:IsHidden="True"/>
+        <Image x:Name="Assets_Icones_ninjateste2cabeçamenorajustado_png" Margin="433,38,-27,54" Source="Assets/Icones/ninjateste2cabeçamenorajustado.png" Stretch="Fill" Width="200" Height="200" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.655,0.605" d:IsHidden="True">
             <Image.RenderTransform>
                 <CompositeTransform/>
             </Image.RenderTransform>
