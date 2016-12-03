@@ -8,18 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF3399FF">
-        <Border BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="135" Margin="40,108,0,0" VerticalAlignment="Top" Width="214">
+        <Border BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="176" Margin="40,84,0,0" VerticalAlignment="Top" Width="214">
             <Image x:Name="ImageSource" Source="uri" AutomationProperties.Name="ImageSource" VerticalAlignment="Top" Stretch="Fill" Height="100" Width="100" Margin="39,13,65,0">
             </Image>
         </Border>
         <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="46,305,0,0" VerticalAlignment="Top" Background="White" BorderBrush="#FF3399FF" FontWeight="Bold" Click="btnIniciar_Click"/>
         <TextBox x:Name="txtPalavraDigitada" HorizontalAlignment="Left" Margin="79,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"/>
         <Button x:Name="btnVerificar" Content="Verificar" HorizontalAlignment="Left" Margin="136,305,0,0" VerticalAlignment="Top" Background="White" BorderBrush="#FF3399FF" FontWeight="Bold" Click="btnVerificar_Click"/>
-        <Border BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="135" Margin="315,109,0,0" VerticalAlignment="Top" Width="214"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="376,111,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" Width="113" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
-        <TextBlock x:Name="txtBlcResultado" HorizontalAlignment="Left" Margin="372,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="113" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
-        <TextBlock x:Name="txtBlcResultadoFinal" HorizontalAlignment="Left" Margin="370,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="113" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
-        <TextBlock x:Name="txtBlcParavaCorreta" HorizontalAlignment="Left" Margin="370,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="113" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
+        <Border BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="176" Margin="276,83,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="396,93,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" Width="113" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
+        <TextBlock x:Name="txtBlcResultado" HorizontalAlignment="Left" Margin="298,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
+        <TextBlock x:Name="txtBlcResultadoFinal" HorizontalAlignment="Left" Margin="298,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
+        <TextBlock x:Name="txtBlcParavaCorreta" HorizontalAlignment="Left" Margin="298,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" Foreground="White" FontWeight="Bold" FontSize="18.667" RenderTransformOrigin="0.407,0.227"/>
+        <TextBlock x:Name="txtBlcPalavraEmLibas" HorizontalAlignment="Left" Margin="298,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="287" Foreground="White" FontWeight="Bold" FontSize="25.333" RenderTransformOrigin="0.407,0.227" FontFamily="LIBRAS2002"/>
 
 
 

@@ -149,21 +149,22 @@ namespace LibrasApp
         private void btnVerificar_Click(object sender, RoutedEventArgs e)
         {
             txtBlcResultado.Text = string.Empty;
-            for (int i = 0; i < palavra.Length; i++)
+            for (int i = 0; i < txtPalavraDigitada.Text.Length; i++)
             {
                 if (txtPalavraDigitada.Text[i].Equals(( palavra[i])))
                 {
                     txtBlcResultado.Text += palavra[i];
                 }
                 else {
-                    txtBlcResultado.Text += "X";
+                    txtBlcResultado.Text += "_";
                    // < Run Foreground = "#FF268A35" Text = "ltado" />
                 }
             }
+            txtBlcPalavraEmLibas.Text = palavra;
 
-            if (txtBlcResultado.Text.Contains("X"))
+            if (txtBlcResultado.Text.Contains("_"))
             {
-                txtBlcResultadoFinal.Text = "Para errada, veja a palavara correta";
+                txtBlcResultadoFinal.Text = "Você errou, A palavara é:";
                 txtBlcParavaCorreta.Text = palavra;
             }
             else txtBlcResultadoFinal.Text = "Parabéns você acertou";
